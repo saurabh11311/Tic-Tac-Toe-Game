@@ -40,6 +40,8 @@ JavaScript for game logic
 
 
 
+Live Demo Image:
+<img width="1673" height="914" alt="image" src="https://github.com/user-attachments/assets/ab7cbd46-ee34-4d80-80ee-1830b49103d8" />
 
 
 
