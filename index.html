@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4e54c8, #8f94fb);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* Container */
+        .container {
+            text-align: center;
+        }
+
+        /* Grid styling */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 100px);
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 15px;
+            -webkit-backdrop-filter: blur(6px);
+            backdrop-filter: blur(6px);
+        }
+        .col {
+            height: 100px;
+            width: 100px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(3px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s ease;
+            color: #d61515;
+        }
+        
+
+        /* Hover Effect */
+        .col:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.07);
+        }
+
+        /* When filled */
+        .col.filled {
+            pointer-events: none;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="row">
+                <div onclick="handleClick(this)" id="0" class="col"></div>
+                <div onclick="handleClick(this)" id="1" class="col"></div>
+                <div onclick="handleClick(this)" id="2" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="3" class="col"></div>
+                <div onclick="handleClick(this)" id="4" class="col"></div>
+                <div onclick="handleClick(this)" id="5" class="col"></div>
+            </div>
+            <div class="row">
+                <div onclick="handleClick(this)" id="6" class="col"></div>
+                <div onclick="handleClick(this)" id="7" class="col"></div>
+                <div onclick="handleClick(this)" id="8" class="col"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
